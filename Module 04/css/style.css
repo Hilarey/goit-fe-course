@@ -64,10 +64,6 @@
 .list-link:focus {
   color: rgb(25, 187, 155);
 }
-* main,
-header {
-  text-transform: uppercase;
-}
 .title {
   font-size: 48px;
   font-family: "Roboto", sans-serif;
