@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+  .container-fluid {
+    height: 700px;
+    background-image: url(/img/header-bg@tablet.jpg);
+  }
+  .text-wrp {
+    max-width: 520px;
+  }
+  .btn {
+    width: 240px;
+  }
+  .btn-w {
+    width: 194px !important;
+  }
+  .title {
+    font-size: 52px;
+  }
+  .discription {
+    font-size: 24px;  
+  }
+}
+@media (min-width: 992px) {
+  .container-fluid {
+    height: 700px;
+    background-image: url(/img/header-bg@desktop.jpg);
+  }
+}
