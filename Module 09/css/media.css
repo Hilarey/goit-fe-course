@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
   .container-fluid {
     height: 700px;
-    background-image: url(./img/header-bg@tablet.jpg);
+    background-image: url(../img/header-bg@tablet.jpg);
   }
   .text-wrp {
     max-width: 520px;
@@ -22,6 +22,6 @@
 @media (min-width: 992px) {
   .container-fluid {
     height: 700px;
-    background-image: url(./img/header-bg@desktop.jpg);
+    background-image: url(../img/header-bg@desktop.jpg);
   }
 }
