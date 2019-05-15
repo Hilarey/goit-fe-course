@@ -10,7 +10,7 @@
 }
 .container-fluid-header {
   height: 540px;
-  background-image: url(/img/header-bg.jpg);
+  background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -142,25 +142,25 @@
 }
 .icon-tv {
   background-color: #ff4e50;
-  background-image: url(/img/icon-tv.png);
+  background-image: url(../img/icon-tv.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-chemical {
   background: #1cd7ad;
-  background-image: url(/img/icon-chemical.png);
+  background-image: url(../img/icon-chemical.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-tea {
   background: #ffa507;
-  background-image: url(/img/icon-tea.png);
+  background-image: url(../img/icon-tea.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-fly {
   background: #4e73db;
-  background-image: url(/img/icon-fly.png);
+  background-image: url(../img/icon-fly.png);
   background-repeat: no-repeat;
   background-position: center;
 }
