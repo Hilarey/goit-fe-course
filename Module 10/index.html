@@ -52,11 +52,18 @@
     </svg>
     <!-- end-svg -->
     <header class="header__wrp">
-      <div class="logo__menu container">
-        <div class="logo__img">
-          <a href="#"
-            ><img src="./img/img-logo.png" alt="logo" title="logo"
-          /></a>
+      <div class="menu container">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img
+              class="logo__img"
+              srcset="./img/img-logo.png 86w, ./img/img-logo@2x.png 172w"
+              sizes="86px, 172px"
+              src="./img/img-logo.png"
+              alt="logo"
+              title="logo"
+            />
+          </a>
         </div>
         <nav class="nav">
           <ul class="list">
@@ -88,19 +95,23 @@
           </ul>
         </nav>
       </div>
-      <h2 class="header__subtitle">
-        Creative Template
-      </h2>
-      <h1 class="header__title">
-        Welcome to MoGo
-      </h1>
-      <button class="header__btn">
-        Learn more
-      </button>
+      <div class="content">
+        <h2 class="content__subtitle content__subtitle--media content--light">
+          Creative Template
+        </h2>
+        <h1 class="content__title content__title--media content--light">
+          Welcome to MoGo
+        </h1>
+        <button class="content__btn content--light">
+          Learn more
+        </button>
+      </div>
     </header>
     <main class="container">
-      <h3 class="main__subtitle">We work with</h3>
-      <h2 class="main__title">amazing services</h2>
+      <div class="content">
+        <h3 class="content__subtitle">We work with</h3>
+        <h2 class="content__title content__title--after">amazing services</h2>
+      </div>
       <section class="services__wrp">
         <!-- =============================================== icon - 1 ================================================================ -->
         <div class="service col-4">
@@ -186,22 +197,24 @@
         </div>
         <!-- =============================================== icon~end - 6 ================================================================ -->
       </section>
-      <h3 class="main__subtitle">Who we are</h3>
-      <h2 class="main__title">meet our team</h2>
-      <p class="main__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-        veritatis! Id hic fugiat tempore laborum deleniti, in provident ea
-        voluptatum facere. Natus praesentium eaque quisquam doloremque quis
-        pariatur error obcaecati eveniet, aut autem? Blanditiis, voluptates
-        esse!
-      </p>
+      <div class="content">
+        <h3 class="content__subtitle">Who we are</h3>
+        <h2 class="content__title content__title--after">meet our team</h2>
+        <p class="content__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+          veritatis! Id hic fugiat tempore laborum deleniti, in provident ea
+          voluptatum facere. Natus praesentium eaque quisquam doloremque quis
+          pariatur error obcaecati eveniet, aut autem? Blanditiis, voluptates
+          esse!
+        </p>
+      </div>
       <section class="cards__wrp">
         <!-- =============================================== card - 1 ==================================================================== -->
         <div class="card">
           <div class="card__img-wrp">
             <img
               srcset="./img/img-1.jpg 380w, ./img/img-1@2x.jpg 760w"
-              sizes="380px"
+              sizes="380px, 760px"
               src="./img/img-1.jpg"
               alt="Matthew Dix"
               class="card__img"
@@ -246,7 +259,7 @@
           <div class="card__img-wrp">
             <img
               srcset="./img/img-2.jpg 380w, ./img/img-2@2x.jpg 760w"
-              sizes="380px"
+              sizes="380px, 760px"
               src="./img/img-2.jpg"
               alt="Christopher Campbell"
               class="card__img"
@@ -291,7 +304,7 @@
           <div class="card__img-wrp">
             <img
               srcset="./img/img-3.jpg 380w, ./img/img-3@2x.jpg 760w"
-              sizes="380px"
+              sizes="380px, 760px"
               src="./img/img-3.jpg"
               alt="Michael Fertig"
               class="card__img"
@@ -334,11 +347,13 @@
       </section>
     </main>
     <footer class="footer__wrp container">
-      <p class="footer__info">
-        © 2016 MoGo free PSD template by<span class="footer__last-word">
-          Laaqiq</span
-        >
-      </p>
+      <div class="info">
+        <p class="info__word">
+          © 2016 MoGo free PSD template by<span class="info__last-word">
+            Laaqiq</span
+          >
+        </p>
+      </div>
       <form>
         <input type="email" name="email" placeholder="Your Email..." />
         <input type="submit" value="subscribe" />
