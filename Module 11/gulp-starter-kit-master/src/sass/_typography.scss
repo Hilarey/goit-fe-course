@@ -1,0 +1,18 @@
+@mixin font-mont($size, $weight, $transform) {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: $transform;
+}
+@mixin font-rob($weight, $style) {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: $weight;
+  font-style: $style;
+}
+%Kaushan {
+font-size: 24px;
+font-family: 'Kaushan Script', cursive;
+font-weight: 400;
+}

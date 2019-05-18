@@ -1,0 +1,56 @@
+.info {
+  &__word,
+  &__last-word {
+    @include font-mont(14px, 400, none);
+    color: $color-dark-grey;
+    padding: 0;
+    margin: 0;
+  }
+  &__last-word {
+    color: $color-red;
+  }
+}
+form {
+  font-size: 0;
+  vertical-align: middle;
+}
+input {
+  font-size: 16px;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  vertical-align: middle;
+  &[type='email'] {
+    width: 230px;
+    height: 40px;
+    border: 1px solid $color-white-grey;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 1rem;
+  }
+  &[type='submit'] {
+    width: 152px;
+    height: 40px;
+    background: $color-green-cyan;
+    border: none;
+    cursor: pointer;
+    color: $color-white;
+    @include font-mont(14px, bold, uppercase);
+  }
+  &::-webkit-input-placeholder {
+    color: $color-white-grey;
+    @include font-rob(none, italic);
+  }
+  &:-ms-input-placeholder {
+    color: $color-white-grey;
+    @include font-rob(none, italic);
+  }
+  &::-ms-input-placeholder {
+    color: $color-white-grey;
+    @include font-rob(none, italic);
+  }
+  &::placeholder {
+    color: $color-white-grey;
+    @include font-rob(none, italic);
+  }
+}

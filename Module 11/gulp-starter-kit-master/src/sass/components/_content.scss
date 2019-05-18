@@ -1,0 +1,45 @@
+.content {
+  text-align: center;
+  &__subtitle {
+    @extend %Kaushan;
+    margin-bottom: 22px;
+  }
+  &__subtitle--media {
+    font-size: 72px !important;
+    margin-bottom: 50px;
+  }
+  &__title {
+    @include font-mont(30px, bold, uppercase);
+  }
+  &--light {
+    color: $color-white;
+  }
+  &__title--media {
+    font-size: 150px !important;
+    line-height: 0.933;
+    margin: 0 auto 120px;
+    width: 800px;
+  }
+  &__btn {
+    @include font-mont(14px, bold, uppercase);
+    line-height: 1.2;
+    border: 3px solid $color-white;
+    background: transparent;
+    cursor: pointer;
+    padding: 9px 27px;
+  }
+  &__title--after::after {
+    content: '';
+    background-color: $color-red;
+    width: 60px;
+    height: 3px;
+    display: block;
+    margin: 40px auto 66px;
+  }
+  &__text {
+    @include font-rob(400, none);
+    line-height: 24px;
+    color: $color-grey;
+    margin-bottom: 94px;
+  }
+}

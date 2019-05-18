@@ -1,0 +1,112 @@
+.card {
+  &__img-wrp {
+    position: relative;
+    cursor: pointer;
+    width: 380px;
+    height: 470px;
+    margin-bottom: 40px;
+  }
+  &__img-wrp::after{
+    content: '';
+    background-image: -webkit-gradient
+      (
+        linear,
+        left top,
+        left bottom,
+        from($color-red),
+        to($color-yellow)
+      );
+    background-image: -webkit-linear-gradient(
+     $color-red 0%,
+     $color-yellow 100%
+    );
+    background-image: -o-linear-gradient(
+      $color-red 0%,
+      $color-yellow 100%
+    );
+    background-image: linear-gradient(
+      $color-red 0%,
+      $color-yellow 100%
+    );
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    bottom: 10px;
+    left: -10px;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  &__img {
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+  }
+  &__img-wrp {
+    background-color: $color-green-cyan;
+  }
+  &__img-wrp:hover &__img {
+    -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+  }
+  &__img-wrp:hover::after {
+    opacity: 0.9;
+  }
+  &__icons-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 228px;
+    height: 56px;
+  }
+  &__icon-btn {
+    --m: 56px;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    width: var(--m);
+    height: var(--m);
+    opacity: 0;
+  }
+  &__icon-wrp:hover &__icon {
+    fill: $color-yellow;
+  }
+  &__img-wrp:hover &__icon-btn {
+    background: $color-yellow;
+    opacity: 1;
+  }
+  &__icon-wrp:hover &__icon-btn {
+    background: $color-red;
+    opacity: 1;
+  }
+  &__icon {
+    --s: 36px;
+    width: var(--s);
+    height: var(--s);
+    fill: $color-red;
+  }
+  &__name {
+    @include font-mont(14px, 700, uppercase);
+    color: $color-dark-grey;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  &__post {
+    @include font-rob(none, italic);
+    color: $color-grey;
+    text-align: center;
+  }
+}
